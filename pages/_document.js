@@ -4,7 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body>
+      <body className="text-slate-300 text-opacity-90 bg-[url('/back.gif')] bg-contain "> 
+      {/* bg-[url('/back.gif')] */}
         <Main />
         <NextScript />
       </body>
