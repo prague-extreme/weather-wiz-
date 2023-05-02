@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Nodata from '@/components/Nodata';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 export default function App({ Component, pageProp }) {
   const [data, setData] = useState(null)
@@ -102,7 +103,10 @@ export default function App({ Component, pageProp }) {
 
   return (
     <main className='w-full h-screen flex flex-col font-myFont'>
-
+      <Head>
+        <title>Weather App</title>
+        <link rel="icon" href="/weathericon.png" />
+      </Head>
       <Navbar xx={xx}/>
       <Component data={data} location={location} setLocation={setLocation} loading={loading} />
     </main>
