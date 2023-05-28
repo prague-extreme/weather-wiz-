@@ -96,6 +96,7 @@ export default function App({ Component, pageProp }) {
       const tempres = await res.json();
       setData(tempres);
       setLoading(false)
+      console.log(data)
     }
     call()
     

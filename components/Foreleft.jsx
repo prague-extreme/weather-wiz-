@@ -11,9 +11,9 @@ function Foreleft({data}) {
                 <h1 className="px-2 py-1 text-md border-2 rounded-md border-zinc-600 border-opacity-40 bg-zinc-600 bg-opacity-30 hover:bg-opacity-60">↤ Back</h1>
               </Link>
             </div>
+            <Day data={data} day={0} borderVar={1} />
             <Day data={data} day={1} borderVar={1} />
             <Day data={data} day={2} borderVar={1} />
-            <Day data={data} day={3} borderVar={1} />
             {/* <Day data={data} day={4} borderVar={1} />
             <Day data={data} day={5} borderVar={0} /> */}
             
